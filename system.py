@@ -97,10 +97,10 @@ background_image_reboot = ImageTk.PhotoImage(reboot_image.resize((120, 120)))
 clean_trash_image = Image.open("trash.png").convert("RGBA")
 background_image_clean_trash = ImageTk.PhotoImage(clean_trash_image.resize((120, 120)))
 
-clean_system_image = Image.open("update_pacman.png").convert("RGBA")
+clean_system_image = Image.open("update_windows.png").convert("RGBA")
 background_image_clean_system = ImageTk.PhotoImage(clean_system_image.resize((120, 120)))
 
-clean_yay_image = Image.open("update_yay.png").convert("RGBA")
+clean_yay_image = Image.open("update_defender.png").convert("RGBA")
 background_image_clean_yay = ImageTk.PhotoImage(clean_yay_image.resize((120, 120)))
 
 app.columnconfigure(0, weight=1)
