@@ -8,11 +8,11 @@ from CTkMessagebox import CTkMessagebox
 
 def show_checkmark():
     CTkMessagebox(message="Windows Updated Successfully!.",
-                  icon="check", option_1="Close")
-    
+                  icon="check", option_1="Close", fg_color = '#6552a2', title = 'Done!', bg_color = 'black', button_hover_color = '#884494', button_color = '#6552a2')
+
 def show_checkmark_for_defender():
     CTkMessagebox(message="Defender Updated Successfully!.",
-                  icon="check", option_1="Close")
+                  icon="check", option_1="Close", fg_color = '#6552a2', title = 'Done!', bg_color = 'black', button_hover_color = '#884494', button_color = '#6552a2')
 
 def button_callback():
     sys.exit()
@@ -56,6 +56,7 @@ def lock_system():
     os.system('rundll32.exe user32.dll, LockWorkStation')
 
 app = ctk.CTk()
+app.corner_radius = 40
 app.geometry('1000x600')
 app.wm_iconname('rocket.ico')
 app.title('Linux')
